@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         // bind RecyclerView
         val recyclerView = activityMainBinding?.viewdeveloper
         loadBar = activityMainBinding!!.loadBar
-        recyclerView!!.setLayoutManager(LinearLayoutManager(this))
+        recyclerView!!.layoutManager = LinearLayoutManager(this)
         recyclerView!!.setHasFixedSize(true)
 
         ///init the View Model
